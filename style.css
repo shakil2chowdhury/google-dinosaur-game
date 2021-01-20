@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.gameBox {
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+.gamePlayer {
+    width: 25px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 500ms infinite;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+.gameBlock {
+    width: 25px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left: 100%;
+    animation: gameBlock 2s infinite linear;
+}
+
+@keyframes gameBlock {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
